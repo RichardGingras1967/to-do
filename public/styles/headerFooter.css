@@ -1,0 +1,16 @@
+header {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+footer {
+  margin-left: 2em;
+}
+
+.nav-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: #38598b;
+  margin: 10px;
+}

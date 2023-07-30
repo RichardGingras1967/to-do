@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(110deg, #dfd3c3 60%, #f0ece2 60%);
+  }
+  
+  form {
+    margin-left: 10px;
+  }
+  
+  .box-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: transparent;
+    height: 60px;
+    width: 400px;
+    background-color: white;
+  }
+  
+  #heading {
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: #38598b;
+    color: white;
+    border: transparent;
+  }
+  
+  p {
+    width: 350px;
+    padding-left: 1em;
+    overflow-wrap: break-word;
+    font-size: 14px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  #btn-new-Item {
+    border-radius: 50%;
+    border: transparent;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1.5em;
+    margin: 0.25em;
+    background-color: #38598b;
+    color: white;
+  }
+  
+  .bottom-corner-round {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .top-corner-round {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  #new-item-box {
+    border: transparent;
+    width: 330px;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    background-color: white;
+  }
+  
+
+  input:checked + p {
+    text-decoration: line-through;
+    text-decoration-color: #38598b;
+  }

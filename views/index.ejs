@@ -1,0 +1,38 @@
+<%- include("partials/header.ejs") %>
+
+<div class="box-container">
+  <div class="box top-corner-round bottom-corner-round" id="heading">
+    <% if (locals.today) { %>
+    <h1><%= today; %></h1>
+    <% } else { %>
+    <h1>Work List</h1>
+    <% } %>
+  </div>
+
+<% todoList.forEach((todo, index) => { 
+    if(index === 0) { %>
+        <div class="box top-corner-round"><input type="checkbox" ><p class="todotext"><%= todo %></p></div>
+    <% } else { %>
+        <div class="box"><input type="checkbox" ><p class="todotext"><%= todo %></p></div>
+    <% } %>
+<% }); %>
+
+  <%  if(locals.today) { %>
+    <% if (todoList.length === 0) { %>
+      <%- include("partials/todayNoTask.ejs") %>
+    <% } else { %>
+      <%- include("partials/today.ejs") %>
+    <% } %>
+   
+  <% } else { %>
+    <% if (todoList.length === 0) { %>
+      <%- include("partials/workNoTask.ejs") %>
+    <% } else { %>
+      <%- include("partials/work.ejs") %>
+    <% } %>
+      
+  <% } %>
+
+</div>
+
+<%- include("partials/footer.ejs") %>
